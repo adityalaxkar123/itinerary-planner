@@ -9,6 +9,11 @@ import Signup from './pages/Signup';
 import ItineraryPlanner from './pages/ItineraryPlanner';
 import AboutUs from './pages/Aboutus';
 import Footer from './pages/Footer';
+import Chatgpt from './pages/Chatgpt';
+import VotingPoll from './pages/VotingPoll';
+import ExpenseTracker from './pages/ExpenseTracker';
+import TodoPage from './pages/TodoPage';
+import CustomizeTemplate from './pages/CustomizeTemplate';
 const App = () => {
   return (<>
     <Router>
@@ -20,6 +25,11 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/itinerary" element={<ItineraryPlanner />} />
+          <Route path="/chatgpt" element={<Chatgpt />} />
+        <Route path="/votingPoll" element={<VotingPoll />} />
+        <Route path="/expenseTracker" element={<ExpenseTracker />} />
+        <Route path="/todo" element={<TodoPage/>} />
+        <Route path="//customize-templates" element={<CustomizeTemplate/>} />
           <Route path="/aboutus" element={<AboutUs />} />
         </Routes>
       </div>
